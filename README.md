@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Shackleton Station
 ### Lunar Mission Simulator for Junior Astronauts
@@ -415,3 +416,36 @@ The simulator uses public references from space research, but it does not repres
 Developed with Godot Engine.
 
 </div>
+=======
+# Projeto-Nasa-App
+
+Simulador da Estação Shackleton em Português (Brasil) e inglês.
+Ao abrir o site, escolha o idioma antes de iniciar a simulação. A escolha
+vale para toda a partida, incluindo alarmes, procedimentos, minijogos e avaliação.
+Recarregue a página para escolher novamente.
+
+O repositório contém a exportação web do Godot. `index.pck` é o pacote original
+em português; `index.en.pck` é a versão em inglês. Sirva os arquivos por HTTP
+para jogar; abrir `index.html` diretamente como arquivo não carrega o Godot.
+
+As traduções estão em `locales/en.json`. Para reconstruir o pacote inglês,
+use Python 3 com o módulo `zstandard` instalado:
+
+```sh
+python3 tools/build_english.py
+node tools/check_language_picker.cjs
+```
+
+O gerador troca somente constantes de texto exatas nos scripts exportados,
+preserva identificadores, tokens e recursos e atualiza o tamanho no HTML.
+Não altere chaves internas, caminhos ou marcadores como `%s`, `%d` e `{poeira}`.
+Os dados e a lógica da simulação são os mesmos nos dois idiomas.
+
+Com Godot 4.7 compatível instalado, execute os 180 testes de simulação
+incluídos na exportação em ambos os idiomas:
+
+```sh
+godot --headless --main-pack index.pck --script res://testes/teste_simulador.gdc
+godot --headless --main-pack index.en.pck --script res://testes/teste_simulador.gdc
+```
+>>>>>>> d61b986 (Add Portuguese and English language selection before simulation)

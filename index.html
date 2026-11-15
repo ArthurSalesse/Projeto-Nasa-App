@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -89,18 +89,43 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+
+#language-picker {
+ position: fixed; inset: 0; z-index: 10; display: grid; place-items: center;
+ background: #080b12; font-family: Arial, sans-serif; overflow: auto;
+}
+.language-card { max-width: 36rem; padding: 2rem; text-align: center; }
+.language-card h1 { color: #6fd0ff; font-size: clamp(1.5rem, 5vw, 2.3rem); }
+.language-card p { color: #c3c9d3; line-height: 1.6; }
+.language-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem; }
+.language-options button {
+ background: #1a2233; color: white; border: 2px solid #6fd0ff;
+ border-radius: .5rem; padding: 1rem 1.5rem; font-size: 1.1rem; cursor: pointer;
+}
+.language-options button:hover { background: #2a3448; }
+.language-options button:focus-visible { outline: 3px solid #ffb648; outline-offset: 4px; }
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 
 	</head>
 	<body>
+		<section id="language-picker" aria-labelledby="language-title">
+ <div class="language-card">
+  <h1 id="language-title">Estação Shackleton<br><span lang="en">Shackleton Station</span></h1>
+  <p>Escolha o idioma para iniciar.<br><span lang="en">Choose your language to begin.</span></p>
+  <div class="language-options">
+   <button type="button" data-language="pt-BR" lang="pt-BR" autofocus>Português (Brasil)</button>
+   <button type="button" data-language="en" lang="en">English</button>
+  </div>
+ </div>
+</section>
 		<canvas id="canvas">
-			Your browser does not support the canvas tag.
+			Seu navegador não suporta canvas. / Your browser does not support canvas.
 		</canvas>
 
 		<noscript>
-			Your browser does not support JavaScript.
+			Seu navegador não suporta JavaScript. / Your browser does not support JavaScript.
 		</noscript>
 
 		<div id="status">
@@ -113,9 +138,22 @@ body {
 		<script>
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":905312,"index.wasm":37902138},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
-const engine = new Engine(GODOT_CONFIG);
-
-(function () {
+(async function () {
+ const language = await new Promise((resolve) => {
+  document.querySelectorAll('[data-language]').forEach((button) => {
+   button.addEventListener('click', () => resolve(button.dataset.language), { once: true });
+  });
+ });
+ const english = language === 'en';
+ document.documentElement.lang = language;
+ document.title = english ? 'Shackleton Station' : 'Estação Shackleton';
+ document.getElementById('canvas').textContent = english
+  ? 'Your browser does not support canvas.' : 'Seu navegador não suporta canvas.';
+ document.getElementById('language-picker').remove();
+ GODOT_CONFIG.mainPack = english ? 'index.en.pck' : 'index.pck';
+ GODOT_CONFIG.args = ['--language', english ? 'en' : 'pt_BR'];
+ GODOT_CONFIG.fileSizes['index.en.pck'] = 876512;
+ const engine = new Engine(GODOT_CONFIG);
 	const statusOverlay = document.getElementById('status');
 	const statusProgress = document.getElementById('status-progress');
 	const statusNotice = document.getElementById('status-notice');
@@ -151,13 +189,9 @@ const engine = new Engine(GODOT_CONFIG);
 
 	function displayFailureNotice(err) {
 		console.error(err);
-		if (err instanceof Error) {
-			setStatusNotice(err.message);
-		} else if (typeof err === 'string') {
-			setStatusNotice(err);
-		} else {
-			setStatusNotice('An unknown error occurred.');
-		}
+        setStatusNotice(english
+            ? 'Unable to start the simulation. Reload the page and try again.'
+            : 'Não foi possível iniciar a simulação. Recarregue a página e tente novamente.');
 		setStatusMode('notice');
 		initializing = false;
 	}
@@ -194,8 +228,10 @@ const engine = new Engine(GODOT_CONFIG);
 			});
 		} else {
 			// Display the message as usual
-			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
-			displayFailureNotice(missingMsg + missing.join('\n'));
+			const missingMsg = english ? 'Your browser does not support the features required to run the simulation.' : 'Seu navegador não suporta os recursos necessários para executar a simulação.';
+			console.error(missingMsg, missing);
+			setStatusNotice(missingMsg);
+			setStatusMode('notice');
 		}
 	} else {
 		setStatusMode('progress');
