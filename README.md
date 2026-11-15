@@ -1,195 +1,195 @@
 
-# Estação Shackleton
-### Simulador de Missão Lunar para Astronautas Juniores
+# Shackleton Station
+### Lunar Mission Simulator for Junior Astronauts
 
 ![Godot](https://img.shields.io/badge/Godot-4.7-478CBF?logo=godot-engine&logoColor=white)
 ![NASA Space Apps](https://img.shields.io/badge/NASA-Space%20Apps-0B3D91)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Protótipo-yellow)
+![Status](https://img.shields.io/badge/Status-Prototype-yellow)
 
-> **Uma missão lunar. Seis dias de desafios. Cada decisão importa.**
+> **One lunar mission. Six days of challenges. Every decision matters.**
 
-A **Estação Shackleton** é um simulador 2D de treinamento e avaliação de astronautas juniores, desenvolvido como projeto para o **NASA Space Apps**.
+**Shackleton Station** is a 2D training and evaluation simulator for junior astronauts, developed as a project for **NASA Space Apps**.
 
-O jogador assume a responsabilidade de operar uma base localizada na borda da cratera Shackleton, no polo sul da Lua, enfrentando situações inspiradas em desafios reais das missões espaciais.
+The player assumes responsibility for operating a base located on the rim of Shackleton Crater, at the Moon's south pole, facing situations inspired by real challenges of space missions.
 
-Mais do que um jogo, a proposta é oferecer uma ferramenta capaz de avaliar a tomada de decisões, o gerenciamento de recursos e a capacidade de resposta a emergências.
-
----
-
-## Jogue Online
-
-A versão Web do simulador pode ser acessada pelo GitHub Pages:
-
-### [JOGAR ESTAÇÃO SHACKLETON](https://arthursalesse.github.io/Projeto-Nasa-App/)
-
-**Não é necessário instalar o Godot.** Basta utilizar um navegador compatível.
-
-> O acesso depende da ativação do GitHub Pages no repositório.
+More than a game, the proposal is to offer a tool capable of evaluating decision-making, resource management, and emergency response capabilities.
 
 ---
 
-## Sobre o Projeto
+## Play Online
 
-O projeto foi desenvolvido para o desafio de simulação de missões espaciais para astronautas juniores.
+The Web version of the simulator can be accessed through GitHub Pages:
 
-Seu principal objetivo é criar um ambiente de treinamento que permita avaliar competências importantes para operações em uma base lunar.
+### [PLAY SHACKLETON STATION](https://arthursalesse.github.io/Projeto-Nasa-App/)
 
-A simulação considera aspectos como:
+**Installing Godot is not necessary.** Simply use a compatible browser.
 
-- Gerenciamento de energia elétrica.
-- Produção e reciclagem de água.
-- Produção e armazenamento de alimentos.
-- Sistemas de suporte à vida.
-- Proteção contra radiação espacial.
-- Comunicação e navegação.
-- Saúde comportamental da tripulação.
-- Tomada de decisões sob pressão.
-
-O simulador utiliza parâmetros inspirados em documentos técnicos e pesquisas da NASA.
-
-**Atenção:** trata-se de um protótipo acadêmico independente, não de um sistema oficial ou validado pela NASA.
+> Access depends on GitHub Pages being enabled in the repository.
 
 ---
 
-## Objetivos
+## About the Project
 
-### Objetivo Geral
+The project was developed for the space mission simulation challenge for junior astronauts.
 
-Desenvolver um simulador interativo capaz de avaliar a prontidão de astronautas juniores por meio de situações operacionais inspiradas em missões lunares.
+Its main objective is to create a training environment that allows the evaluation of important competencies for operations at a lunar base.
 
-### Objetivos Específicos
+The simulation considers aspects such as:
 
-1. Simular o funcionamento de uma base lunar.
-2. Apresentar problemas técnicos e operacionais.
-3. Avaliar decisões tomadas sob pressão.
-4. Monitorar o consumo de recursos essenciais.
-5. Aplicar procedimentos de emergência.
-6. Fornecer feedback educativo sobre as decisões.
-7. Gerar um índice de prontidão do candidato.
-8. Permitir a repetição das missões com cenários diferentes.
+- Electrical power management.
+- Water production and recycling.
+- Food production and storage.
+- Life support systems.
+- Protection against space radiation.
+- Communication and navigation.
+- Crew behavioral health.
+- Decision-making under pressure.
+
+The simulator uses parameters inspired by NASA technical documents and research.
+
+**Attention:** this is an independent academic prototype, not an official system or one validated by NASA.
 
 ---
 
-## Cenário da Missão
+## Objectives
 
-A simulação acontece em uma base fictícia localizada na borda da **cratera Shackleton**, no polo sul lunar.
+### General Objective
 
-Essa região é relevante para a exploração espacial por apresentar áreas de iluminação solar prolongada e regiões permanentemente sombreadas, que podem conter depósitos de gelo.
+Develop an interactive simulator capable of evaluating the readiness of junior astronauts through operational situations inspired by lunar missions.
 
-### Configuração da Missão
+### Specific Objectives
 
-| Parâmetro | Descrição |
+1. Simulate the operation of a lunar base.
+2. Present technical and operational problems.
+3. Evaluate decisions made under pressure.
+4. Monitor the consumption of essential resources.
+5. Apply emergency procedures.
+6. Provide educational feedback on decisions.
+7. Generate a candidate readiness index.
+8. Allow missions to be repeated with different scenarios.
+
+---
+
+## Mission Scenario
+
+The simulation takes place at a fictional base located on the rim of **Shackleton Crater**, at the lunar south pole.
+
+This region is relevant to space exploration because it features areas of prolonged sunlight and permanently shadowed regions that may contain ice deposits.
+
+### Mission Configuration
+
+| Parameter | Description |
 |---|---|
-| Localização | Polo sul lunar |
-| Base | Estação Shackleton |
-| Duração simulada | 6 dias (144 horas) |
-| Duração aproximada real | 5 minutos |
-| Tripulação | 4 astronautas |
-| Dias 1 a 5 | Geração de energia solar |
-| Dia 6 | 24 horas simuladas sem geração solar |
-| Objetivo | Manter a base operacional até o final |
+| Location | Lunar south pole |
+| Base | Shackleton Station |
+| Simulated duration | 6 days (144 hours) |
+| Approximate real duration | 5 minutes |
+| Crew | 4 astronauts |
+| Days 1 to 5 | Solar power generation |
+| Day 6 | 24 simulated hours without solar power generation |
+| Objective | Keep the base operational until the end |
 
-O período de sombra é uma condição definida para o ciclo de treinamento, não uma representação universal da duração da noite lunar.
-
----
-
-## Como Funciona
-
-Durante a missão, o jogador controla um astronauta e percorre diferentes módulos da estação.
-
-O simulador apresenta alarmes, situações de emergência e decisões que afetam diretamente o funcionamento da base.
-
-### Mecânicas principais
-
-**Exploração da base**
-
-O jogador pode percorrer os módulos e interagir com os equipamentos.
-
-**Tomada de decisões**
-
-Cada cenário apresenta alternativas com consequências diferentes para os recursos disponíveis.
-
-**Procedimentos de emergência**
-
-Algumas situações exigem a execução de checklists em uma ordem específica e dentro de um prazo.
-
-**Gerenciamento de recursos**
-
-As decisões afetam os níveis de energia, água, alimentos, oxigênio e segurança da tripulação.
-
-**Feedback educativo**
-
-O simulador informa se a decisão foi correta, aceitável ou incorreta, apresentando uma explicação relacionada ao contexto espacial.
+The shadow period is a condition defined for the training cycle, not a universal representation of the duration of the lunar night.
 
 ---
 
-## Cenários de Emergência
+## How It Works
 
-Os eventos são organizados em diferentes áreas operacionais.
+During the mission, the player controls an astronaut and moves through different modules of the station.
 
-| Área | Cenário 1 | Cenário 2 |
+The simulator presents alarms, emergency situations, and decisions that directly affect the operation of the base.
+
+### Main Mechanics
+
+**Base Exploration**
+
+The player can move through the modules and interact with equipment.
+
+**Decision-Making**
+
+Each scenario presents alternatives with different consequences for the available resources.
+
+**Emergency Procedures**
+
+Some situations require checklists to be completed in a specific order and within a time limit.
+
+**Resource Management**
+
+Decisions affect energy, water, food, oxygen levels, and crew safety.
+
+**Educational Feedback**
+
+The simulator indicates whether the decision was correct, acceptable, or incorrect, presenting an explanation related to the space context.
+
+---
+
+## Emergency Scenarios
+
+Events are organized into different operational areas.
+
+| Area | Scenario 1 | Scenario 2 |
 |---|---|---|
-| Água | Falha no sensor de qualidade | Falha no processador de urina |
-| Alimentação | Umidade elevada na estufa | Falta de oxigênio na aquaponia |
-| Energia | Poeira nos painéis solares | Rastreador solar travado |
-| Controle térmico | Superaquecimento da bateria | Vazamento de amônia |
-| Suporte à vida | Vazamento de ar | Saturação do removedor de CO₂ |
-| Radiação | Tempestade solar durante EVA | Tempestade solar com equipe no rover |
-| Comunicação | Antena danificada | Baliza de navegação danificada |
+| Water | Water quality sensor failure | Urine processor failure |
+| Food | High humidity in the greenhouse | Low oxygen in aquaponics |
+| Energy | Dust on solar panels | Stuck solar tracker |
+| Thermal control | Battery overheating | Ammonia leak |
+| Life support | Air leak | CO₂ removal system saturation |
+| Radiation | Solar storm during EVA | Solar storm with crew in the rover |
+| Communication | Damaged antenna | Damaged navigation beacon |
 
-### Impacto de Micrometeoroide
+### Micrometeoroid Impact
 
-Um evento especial pode ocorrer em um momento aleatório da missão.
+A special event may occur at a random moment during the mission.
 
-O jogador deve executar procedimentos de emergência para isolar o impacto e reduzir as perdas de oxigênio.
+The player must execute emergency procedures to isolate the impact and reduce oxygen losses.
 
-Dependendo do resultado, equipamentos de comunicação ou navegação podem ser danificados.
+Depending on the outcome, communication or navigation equipment may be damaged.
 
-### 🧠 Saúde Comportamental
+### 🧠 Behavioral Health
 
-O simulador também considera situações relacionadas à tripulação:
+The simulator also considers situations related to the crew:
 
-- Conflitos interpessoais.
-- Privação de sono.
-- Notícias familiares e necessidade de apoio psicológico.
+- Interpersonal conflicts.
+- Sleep deprivation.
+- Family news and the need for psychological support.
 
-Esses eventos exigem que o jogador considere não apenas os sistemas técnicos, mas também o bem-estar dos astronautas.
-
----
-
-## Gerenciamento de Energia
-
-Um dos principais desafios acontece no sexto dia da missão.
-
-Durante esse período, a estação precisa funcionar sem geração solar, utilizando apenas a energia armazenada.
-
-O jogador deve avaliar quais sistemas podem ter seu consumo reduzido temporariamente.
-
-Entre os sistemas gerenciáveis estão:
-
-- Aquecimento do habitat.
-- Gerador de oxigênio.
-- Iluminação da estufa.
-- Sistema de aquaponia.
-- Processamento de regolito.
-- Reserva de energia das baterias.
-
-A autonomia energética depende das decisões tomadas durante os dias anteriores.
+These events require the player to consider not only technical systems but also the well-being of the astronauts.
 
 ---
 
-## Sistema de Avaliação
+## Energy Management
 
-Ao finalizar a missão, o simulador calcula um **Índice de Prontidão**, variando de 0 a 100.
+One of the main challenges takes place on the sixth day of the mission.
 
-A avaliação considera a qualidade das decisões e a execução dos procedimentos.
+During this period, the station must operate without solar power generation, using only stored energy.
 
-### Pesos de Fibonacci
+The player must evaluate which systems can have their consumption temporarily reduced.
 
-As seis posições de decisão possuem pesos progressivos:
+Manageable systems include:
 
-| Posição | Peso |
+- Habitat heating.
+- Oxygen generator.
+- Greenhouse lighting.
+- Aquaponics system.
+- Regolith processing.
+- Battery energy reserve.
+
+Energy autonomy depends on decisions made during the previous days.
+
+---
+
+## Evaluation System
+
+At the end of the mission, the simulator calculates a **Readiness Index**, ranging from 0 to 100.
+
+The evaluation considers the quality of decisions and the execution of procedures.
+
+### Fibonacci Weights
+
+The six decision positions have progressive weights:
+
+| Position | Weight |
 |---|---|
 | 1 | 1 |
 | 2 | 2 |
@@ -197,124 +197,124 @@ As seis posições de decisão possuem pesos progressivos:
 | 4 | 5 |
 | 5 | 8 |
 | 6 | 13 |
-| Micrometeoroide | 21 |
+| Micrometeoroid | 21 |
 | **Total** | **53** |
 
-As decisões recebem os seguintes valores:
+Decisions receive the following values:
 
-- **Correta:** 1 ponto proporcional ao peso.
-- **Aceitável:** 0,618 ponto proporcional ao peso.
-- **Incorreta:** 0 ponto.
+- **Correct:** 1 point proportional to the weight.
+- **Acceptable:** 0.618 points proportional to the weight.
+- **Incorrect:** 0 points.
 
-A pontuação ponderada é convertida em um índice de 0 a 100.
+The weighted score is converted into an index from 0 to 100.
 
-### Classificação dos Candidatos
+### Candidate Classification
 
-O sistema utiliza cinco níveis de prontidão, com limites de pontuação em 21, 34, 55 e 89.
+The system uses five readiness levels, with score thresholds at 21, 34, 55, and 89.
 
-O nível 1 representa a classificação mais baixa, enquanto o nível 5 corresponde ao melhor desempenho.
+Level 1 represents the lowest classification, while level 5 corresponds to the best performance.
 
-Essa classificação é um mecanismo de avaliação do protótipo, não uma certificação oficial de astronautas.
-
----
-
-## Aleatoriedade e Rejogabilidade
-
-Para evitar que o jogador apenas memorize respostas, o simulador utiliza mecanismos de aleatoriedade.
-
-A cada nova tentativa:
-
-1. Um cenário é selecionado para cada tema.
-2. A ordem dos temas pode ser modificada.
-3. As alternativas são embaralhadas.
-4. O impacto de micrometeoroide ocorre em horário variável.
-5. As consequências dependem das decisões anteriores.
-
-Isso incentiva o jogador a compreender os problemas e desenvolver raciocínio operacional.
+This classification is an evaluation mechanism of the prototype, not an official astronaut certification.
 
 ---
 
-## Tecnologias Utilizadas
+## Randomization and Replayability
 
-| Tecnologia | Utilização |
+To prevent the player from simply memorizing answers, the simulator uses randomization mechanisms.
+
+With each new attempt:
+
+1. One scenario is selected for each topic.
+2. The order of the topics may be modified.
+3. The alternatives are shuffled.
+4. The micrometeoroid impact occurs at a variable time.
+5. The consequences depend on previous decisions.
+
+This encourages the player to understand the problems and develop operational reasoning.
+
+---
+
+## Technologies Used
+
+| Technology | Usage |
 |---|---|
-| Godot Engine 4.7 | Desenvolvimento do simulador |
-| GDScript | Programação das mecânicas |
-| Godot Web Export | Execução no navegador |
-| Git | Controle de versão |
-| GitHub | Hospedagem do repositório |
-| GitHub Pages | Publicação da versão Web |
+| Godot Engine 4.7 | Simulator development |
+| GDScript | Programming the mechanics |
+| Godot Web Export | Browser execution |
+| Git | Version control |
+| GitHub | Repository hosting |
+| GitHub Pages | Web version publishing |
 
 ---
 
-## Como Executar
+## How to Run
 
-### Opção 1 — Jogar pelo navegador
+### Option 1 — Play in the Browser
 
-Acesse:
+Access:
 
 https://arthursalesse.github.io/Projeto-Nasa-App/
 
-A versão Web permite executar o simulador sem instalar o Godot.
+The Web version allows the simulator to run without installing Godot.
 
-### Opção 2 — Executar localmente
+### Option 2 — Run Locally
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
 git clone https://github.com/ArthurSalesse/Projeto-Nasa-App.git
 ```
 
-Entre no diretório:
+Enter the directory:
 
 ```bash
 cd Projeto-Nasa-App
 ```
 
-Se estiver utilizando a versão Web exportada, execute um servidor HTTP local:
+If you are using the exported Web version, start a local HTTP server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Abra o navegador e acesse:
+Open your browser and access:
 
 http://localhost:8000
 
-> Para editar o projeto no Godot, é necessário ter acesso aos arquivos-fonte, incluindo o `project.godot`. Os arquivos Web exportados não substituem o projeto editável.
+> To edit the project in Godot, access to the source files, including `project.godot`, is required. The exported Web files do not replace the editable project.
 
 ---
 
-## Testes e Validação
+## Testing and Validation
 
-A documentação técnica do protótipo registra **180 testes automatizados**.
+The prototype's technical documentation records **180 automated tests**.
 
-Os testes foram utilizados para verificar aspectos como:
+The tests were used to verify aspects such as:
 
-- Funcionamento das mecânicas.
-- Balanceamento de recursos.
-- Processamento das decisões.
-- Aleatoriedade dos cenários.
-- Cálculo da avaliação final.
+- Functionality of the mechanics.
+- Resource balancing.
+- Decision processing.
+- Scenario randomization.
+- Final evaluation calculation.
 
-A validação com usuários e especialistas ainda faz parte dos próximos passos do projeto.
+Validation with users and specialists is still part of the project's next steps.
 
 ---
 
-## Fundamentação Científica
+## Scientific Foundation
 
-O simulador utiliza como referência pesquisas e documentos técnicos relacionados à exploração espacial.
+The simulator uses research and technical documents related to space exploration as references.
 
-Entre os principais temas pesquisados estão:
+The main topics researched include:
 
-- Sistemas de suporte à vida da ISS.
-- Consumo de oxigênio e água.
-- Produção e armazenamento de energia.
-- Sistemas de proteção contra radiação.
-- Operações de superfície lunar.
-- Comunicação e navegação espacial.
+- ISS life support systems.
+- Oxygen and water consumption.
+- Energy production and storage.
+- Radiation protection systems.
+- Lunar surface operations.
+- Space communication and navigation.
 
-### Referências
+### References
 
 1. NASA — *Life Support Baseline Values and Assumptions Document (BVAD)*.
 2. NASA — *Environmental Control and Life Support System (ECLSS)*.
@@ -324,94 +324,94 @@ Entre os principais temas pesquisados estão:
 6. NASA — *LunaNet: Lunar Networking Standards*.
 7. Clowdsley — *Protecting Astronauts from Space Radiation on the Lunar Surface*.
 
-Alguns parâmetros utilizados no balanceamento são escolhas de design da equipe e não devem ser interpretados como valores oficiais da NASA.
+Some parameters used in balancing are design choices made by the team and should not be interpreted as official NASA values.
 
 ---
 
-## Financiamento e Sustentabilidade
+## Funding and Sustainability
 
-A proposta de desenvolvimento considera três etapas.
+The development proposal considers three stages.
 
-### 1. Validação
+### 1. Validation
 
-Busca de apoio por meio de universidades, bolsas de pesquisa e programas de iniciação científica.
+Seeking support through universities, research scholarships, and scientific initiation programs.
 
-Possíveis instituições:
+Potential institutions:
 
 - CNPq.
 - Fundação Araucária.
-- Universidades e centros de pesquisa.
+- Universities and research centers.
 
-### 2. Desenvolvimento do Produto
+### 2. Product Development
 
-Busca de financiamento para aprimorar a interface, ampliar os cenários e desenvolver funcionalidades adicionais.
+Seeking funding to improve the interface, expand scenarios, and develop additional features.
 
-Possíveis fontes incluem editais de inovação e programas de fomento tecnológico.
+Potential sources include innovation grants and technological development funding programs.
 
-### 3. Expansão
+### 3. Expansion
 
-Possibilidade de licenciamento e parcerias com:
+Possibility of licensing and partnerships with:
 
-- Centros de treinamento.
-- Instituições de ensino.
-- Museus de ciência.
-- Programas de formação espacial.
+- Training centers.
+- Educational institutions.
+- Science museums.
+- Space training programs.
 
-Essas possibilidades representam propostas futuras, não financiamentos ou parcerias já estabelecidos.
-
----
-
-## Próximos Passos
-
-- [ ] Realizar testes com estudantes.
-- [ ] Validar parâmetros com especialistas.
-- [ ] Ampliar os cenários de treinamento.
-- [ ] Aprimorar a interface e os recursos audiovisuais.
-- [ ] Implementar ranking online.
-- [ ] Desenvolver novos ciclos de missão.
-- [ ] Explorar simulações de missões em Marte.
-- [ ] Investigar funcionalidades multiplayer.
+These possibilities represent future proposals, not funding or partnerships already established.
 
 ---
 
-## Equipe de Desenvolvimento
+## Next Steps
 
-Projeto desenvolvido por:
+- [ ] Conduct tests with students.
+- [ ] Validate parameters with specialists.
+- [ ] Expand training scenarios.
+- [ ] Improve the interface and audiovisual resources.
+- [ ] Implement an online ranking.
+- [ ] Develop new mission cycles.
+- [ ] Explore simulations of missions to Mars.
+- [ ] Investigate multiplayer features.
+
+---
+
+## Development Team
+
+Project developed by:
 
 - **Arthur Salesse**
 - **Giova Jovelho**
 - **Eliseu Camargo**
 - **Desirée Wolf**
 
-**Projeto:** NASA Space Apps  
-**Ano:** 2026
+**Project:** NASA Space Apps  
+**Year:** 2026
 
 ---
 
-## Licença
+## License
 
-Este projeto está disponibilizado sob a **Licença MIT**.
+This project is made available under the **MIT License**.
 
-Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+See the [LICENSE](LICENSE) file for more information.
 
-Recursos de terceiros podem estar sujeitos a licenças específicas.
+Third-party resources may be subject to specific licenses.
 
 ---
 
-## Aviso
+## Disclaimer
 
-Este é um projeto acadêmico independente desenvolvido para o NASA Space Apps.
+This is an independent academic project developed for NASA Space Apps.
 
-O simulador utiliza referências públicas de pesquisas espaciais, mas não representa um produto oficial da NASA e não possui certificação para treinamento ou seleção real de astronautas.
+The simulator uses public references from space research, but it does not represent an official NASA product and does not have certification for real astronaut training or selection.
 
 ---
 
 <div align="center">
 
-### Estação Shackleton
+### Shackleton Station
 
-**Treinando decisões hoje para os desafios espaciais de amanhã.**
+**Training decisions today for the space challenges of tomorrow.**
 
-Desenvolvido com Godot Engine.
+Developed with Godot Engine.
 
 </div>
