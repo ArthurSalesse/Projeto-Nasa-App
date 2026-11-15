@@ -1,5 +1,5 @@
 
-# 🌕 Estação Shackleton
+# Estação Shackleton
 ### Simulador de Missão Lunar para Astronautas Juniores
 
 ![Godot](https://img.shields.io/badge/Godot-4.7-478CBF?logo=godot-engine&logoColor=white)
@@ -17,11 +17,11 @@ Mais do que um jogo, a proposta é oferecer uma ferramenta capaz de avaliar a to
 
 ---
 
-## 🚀 Jogue Online
+## Jogue Online
 
 A versão Web do simulador pode ser acessada pelo GitHub Pages:
 
-### 🎮 [JOGAR ESTAÇÃO SHACKLETON](https://arthursalesse.github.io/Projeto-Nasa-App/)
+### [JOGAR ESTAÇÃO SHACKLETON](https://arthursalesse.github.io/Projeto-Nasa-App/)
 
 **Não é necessário instalar o Godot.** Basta utilizar um navegador compatível.
 
@@ -29,7 +29,7 @@ A versão Web do simulador pode ser acessada pelo GitHub Pages:
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 O projeto foi desenvolvido para o desafio de simulação de missões espaciais para astronautas juniores.
 
@@ -52,7 +52,7 @@ O simulador utiliza parâmetros inspirados em documentos técnicos e pesquisas d
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Objetivo Geral
 
@@ -71,7 +71,7 @@ Desenvolver um simulador interativo capaz de avaliar a prontidão de astronautas
 
 ---
 
-## 🌑 Cenário da Missão
+## Cenário da Missão
 
 A simulação acontece em uma base fictícia localizada na borda da **cratera Shackleton**, no polo sul lunar.
 
@@ -94,7 +94,7 @@ O período de sombra é uma condição definida para o ciclo de treinamento, nã
 
 ---
 
-## 🕹️ Como Funciona
+## Como Funciona
 
 Durante a missão, o jogador controla um astronauta e percorre diferentes módulos da estação.
 
@@ -124,7 +124,7 @@ O simulador informa se a decisão foi correta, aceitável ou incorreta, apresent
 
 ---
 
-## ⚠️ Cenários de Emergência
+## Cenários de Emergência
 
 Os eventos são organizados em diferentes áreas operacionais.
 
@@ -138,7 +138,7 @@ Os eventos são organizados em diferentes áreas operacionais.
 | Radiação | Tempestade solar durante EVA | Tempestade solar com equipe no rover |
 | Comunicação | Antena danificada | Baliza de navegação danificada |
 
-### ☄️ Impacto de Micrometeoroide
+### Impacto de Micrometeoroide
 
 Um evento especial pode ocorrer em um momento aleatório da missão.
 
@@ -158,7 +158,7 @@ Esses eventos exigem que o jogador considere não apenas os sistemas técnicos, 
 
 ---
 
-## ⚡ Gerenciamento de Energia
+## Gerenciamento de Energia
 
 Um dos principais desafios acontece no sexto dia da missão.
 
@@ -179,7 +179,7 @@ A autonomia energética depende das decisões tomadas durante os dias anteriores
 
 ---
 
-## 📊 Sistema de Avaliação
+## Sistema de Avaliação
 
 Ao finalizar a missão, o simulador calcula um **Índice de Prontidão**, variando de 0 a 100.
 
@@ -218,7 +218,7 @@ Essa classificação é um mecanismo de avaliação do protótipo, não uma cert
 
 ---
 
-## 🔀 Aleatoriedade e Rejogabilidade
+## Aleatoriedade e Rejogabilidade
 
 Para evitar que o jogador apenas memorize respostas, o simulador utiliza mecanismos de aleatoriedade.
 
@@ -234,7 +234,7 @@ Isso incentiva o jogador a compreender os problemas e desenvolver raciocínio op
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Utilização |
 |---|---|
@@ -247,7 +247,7 @@ Isso incentiva o jogador a compreender os problemas e desenvolver raciocínio op
 
 ---
 
-## 💻 Como Executar
+## Como Executar
 
 ### Opção 1 — Jogar pelo navegador
 
@@ -285,7 +285,7 @@ http://localhost:8000
 
 ---
 
-## 🧪 Testes e Validação
+## Testes e Validação
 
 A documentação técnica do protótipo registra **180 testes automatizados**.
 
@@ -301,7 +301,7 @@ A validação com usuários e especialistas ainda faz parte dos próximos passos
 
 ---
 
-## 🔬 Fundamentação Científica
+## Fundamentação Científica
 
 O simulador utiliza como referência pesquisas e documentos técnicos relacionados à exploração espacial.
 
@@ -328,7 +328,7 @@ Alguns parâmetros utilizados no balanceamento são escolhas de design da equipe
 
 ---
 
-## 💰 Financiamento e Sustentabilidade
+## Financiamento e Sustentabilidade
 
 A proposta de desenvolvimento considera três etapas.
 
@@ -361,7 +361,7 @@ Essas possibilidades representam propostas futuras, não financiamentos ou parce
 
 ---
 
-## 📈 Próximos Passos
+## Próximos Passos
 
 - [ ] Realizar testes com estudantes.
 - [ ] Validar parâmetros com especialistas.
@@ -374,7 +374,7 @@ Essas possibilidades representam propostas futuras, não financiamentos ou parce
 
 ---
 
-## 👨‍🚀 Equipe de Desenvolvimento
+## Equipe de Desenvolvimento
 
 Projeto desenvolvido por:
 
@@ -388,7 +388,7 @@ Projeto desenvolvido por:
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está disponibilizado sob a **Licença MIT**.
 
@@ -398,7 +398,7 @@ Recursos de terceiros podem estar sujeitos a licenças específicas.
 
 ---
 
-## 🌎 Aviso
+## Aviso
 
 Este é um projeto acadêmico independente desenvolvido para o NASA Space Apps.
 
@@ -408,7 +408,7 @@ O simulador utiliza referências públicas de pesquisas espaciais, mas não repr
 
 <div align="center">
 
-### 🌕 Estação Shackleton
+### Estação Shackleton
 
 **Treinando decisões hoje para os desafios espaciais de amanhã.**
 
